@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1090346749026",
+    "project_id": "fir-chat-2fefe",
+    "storage_bucket": "fir-chat-2fefe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090346749026:android:39714d99778ea3ad29953b",
+        "android_client_info": {
+          "package_name": "com.example.chatapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090346749026-8bdr31vhsjqg8qt2jtgatrhmufb279v3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatapplication",
+            "certificate_hash": "a6ce8ecf1551df02da7dd2cc55d322f184e6d321"
+          }
+        },
+        {
+          "client_id": "1090346749026-hunu2p4175ieos16hl9dbbcift1068t0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhNw_uHVsg9-qguMVcDi1Th9vIvlv5Ybk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090346749026-hunu2p4175ieos16hl9dbbcift1068t0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1090346749026-4k9jnj4at4ilunmt96grgmdd4p4titva.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.chtapp.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
