@@ -8,7 +8,8 @@ import 'package:pin_input_text_field/pin_input_text_field.dart';
 import '../controllers/login_controller.dart';
 
 class VerificationPage extends GetView<LoginController> {
-  const VerificationPage({super.key});
+    final String verificationId;
+  const VerificationPage({super.key , required this.verificationId});
 
   @override
   Widget build(BuildContext context) {

@@ -1,27 +1,38 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'dart:convert';
 
-class UserModel{
-  String uid;
-  String email;
-  String name;
-  String joinedAt;
-  String image;
+UserModel userModelFromJson(String str) => UserModel.fromJson(json.decode(str));
+
+String userModelToJson(UserModel userModel) => json.encode(userModel.toJson());
+
+class UserModel {
+  late String uId, name, image, number, status, typing, online;
 
   UserModel({
-    required this.email,
+    required this.uId,
     required this.name,
-    required this.uid,
     required this.image,
-    required this.joinedAt,
+    required this.number,
+    required this.status,
+    required this.typing,
+    required this.online,
   });
 
- factory UserModel.fromJson(DocumentSnapshot snapshot){
-  return UserModel(
-    email: snapshot['email'], 
-    name: snapshot['fullName'], 
-    uid: snapshot['uid'], 
-    image: snapshot['profilePic'], 
-    joinedAt: snapshot['jooinedAt']);
- }
+  factory UserModel.fromJson(Map<String, dynamic> json) => UserModel(
+      uId: json["uId"],
+      name: json["name"],
+      image: json["image"],
+      number: json["number"],
+      status: json["status"],
+      typing: json["typing"],
+      online: json["online"]);
 
+  Map<String, dynamic> toJson() => {
+        "uId": uId,
+        "name": name,
+        "image": image,
+        "number": number,
+        "status": status,
+        "typing": typing,
+        "online": online,
+      };
 }
